@@ -1,0 +1,192 @@
+body {
+    background-color: #f5f5dc;
+    margin: 0; /* Remove default body margin for full coverage */
+    padding: 0; /* Remove default body padding for full coverage */
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Menu Styles */
+ul {
+    background-color: 	#bdb76b;
+    display: flex;
+    justify-content: space-evenly; /* Evenly space menu items */
+    align-items: center;
+    gap: 0; /* No gap between menu items */
+    margin-top: 20px;
+}
+
+li {
+    /* No need for 'float: left;' when using flex */
+}
+
+li a {
+    display: flex; /* Use flexbox to center icon and text vertically */
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center icon and text horizontally */
+    color: black;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+li a:hover {
+    background-color:#556b2f;
+}
+
+.active {
+    background-color: #556b2f;
+}
+
+/* Add icons using Font Awesome */
+li a::before {
+    font-family: "Font Awesome 5 Free"; /* Use the correct Font Awesome font family */
+    margin-bottom: 6px; /* Adjust spacing between icon and text */
+    width: 1em;
+    display: inline-block;
+    text-align: center;
+    content: attr(data-icon); /* Use the 'data-icon' attribute to specify the icon code */
+}
+
+header {
+    /* Add some left margin to move the header away from the left border */
+    display: flex; /* Use flexbox to create a horizontal layout */
+    align-items: center; /* Align items vertically in the center */
+    margin-left: 50px; 
+    margin-top: 50px; 
+}
+
+header img {
+    max-width: 200px; /* Adjust the image width as needed */
+    margin-right: 40px; /* Add spacing between the image and text */
+}
+
+header h1, header h2 {
+    font-family: Arial, sans-serif; /* Use Arial if available, otherwise use a sans-serif font */
+}
+
+
+#content {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: flex-start; /* Align items to the top */
+    font-size: 19px;
+}
+
+#about-me {
+    flex: 1; /* Expand to fill available space */
+    margin-right: 20px; /* Add some spacing between sections */
+    margin-left: 50px;
+}
+
+#things-i-like {
+    flex: 1; /* Expand to fill available space */
+}
+
+#things-i-like img {
+    max-width: 200px; /* Adjust the image width as needed */
+    margin-right: 40px; /* Add spacing between the image and text */
+}
+
+/* Add this CSS to your stylesheet */
+.image-container {
+    display: flex;
+    align-items: center; /* Center images vertically */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.image-container img {
+    max-width: 200px; /* Set a maximum width for the images */
+    margin: 1px; /* Add some margin around each image */
+}
+
+
+#contact-me {
+    text-align: center;
+    padding: 1px;
+    margin-top: auto;
+    margin-bottom: 0; /* Remove margin-bottom */
+}
+
+.social-icons-container {
+    flex-grow: 1; /* Fill the remaining vertical space */
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    font-size: 40px; /* Adjust the icon size */
+    margin-right: 20px; /* Add spacing between icons */
+}
+
+/* Change the color for specific social media icons */
+.social-icons a[href*="linkedin.com"] {
+    color: #0077B5; /* LinkedIn blue */
+}
+
+.social-icons a[href*="facebook.com"] {
+    color: #1877F2; /* Facebook blue */
+}
+
+.social-icons a[href*="twitter.com"] {
+    color: #1DA1F2; /* Twitter blue */
+}
+
+.social-icons a[href*="instagram.com"] {
+    color: #E4405F; /* Instagram pink */
+}
+
+.social-icons a[href*="github.com"] {
+    color: #333; /* GitHub black */
+}
+
+.social-icons a[href*="mailto"] {
+    color: #0070c9; /* Apple Mail blue color */ 
+}
+
+
+footer {
+    /* background-color: #bdb76b; */
+    text-align: center;
+    padding: 1px; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body covers the entire viewport height */
+}
+
+
+/* qualifications */
+#q-content {
+    justify-content: space-between; /* Space elements evenly */
+    align-items: flex-start; /* Align items to the top */
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+/* portfolio */
+#projects{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#header-projects {
+    /* Add some left margin to move the header away from the left border */
+    display: flex; /* Use flexbox to create a horizontal layout */
+    align-items: center; /* Align items vertically in the center */
+    margin-left: 50px; 
+    margin-top: 30px; 
+}
+
+#header-projects h1 {
+    font-family: Arial, sans-serif; /* Use Arial if available, otherwise use a sans-serif font */
+}
