@@ -1,9 +1,8 @@
 body {
     background-color: #f5f5dc;
-    margin: 0; /* Remove default body margin for full coverage */
-    padding: 0; /* Remove default body padding for full coverage */
+    margin: 0;
+    padding: 0;
 }
-
 
 ul {
     list-style-type: none;
@@ -11,24 +10,22 @@ ul {
     padding: 0;
 }
 
-/* Navigation Menu Styles */
 ul {
-    background-color: 	#bdb76b;
+    background-color: #bdb76b;
     display: flex;
-    justify-content: space-evenly; /* Evenly space menu items */
+    justify-content: space-evenly;
     align-items: center;
-    gap: 0; /* No gap between menu items */
+    gap: 0;
     margin-top: 20px;
 }
 
 li {
-    /* No need for 'float: left;' when using flex */
 }
 
 li a {
-    display: flex; /* Use flexbox to center icon and text vertically */
-    flex-direction: column; /* Stack icon and text vertically */
-    align-items: center; /* Center icon and text horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: black;
     text-align: center;
     padding: 12px 20px;
@@ -38,155 +35,217 @@ li a {
 }
 
 li a:hover {
-    background-color:#556b2f;
+    background-color: #556b2f;
 }
 
 .active {
     background-color: #556b2f;
 }
 
-/* Add icons using Font Awesome */
 li a::before {
-    font-family: "Font Awesome 5 Free"; /* Use the correct Font Awesome font family */
-    margin-bottom: 6px; /* Adjust spacing between icon and text */
+    font-family: "Font Awesome 5 Free";
+    margin-bottom: 6px;
     width: 1em;
     display: inline-block;
     text-align: center;
-    content: attr(data-icon); /* Use the 'data-icon' attribute to specify the icon code */
+    content: attr(data-icon);
 }
 
 header {
-    /* Add some left margin to move the header away from the left border */
-    display: flex; /* Use flexbox to create a horizontal layout */
-    align-items: center; /* Align items vertically in the center */
-    margin-left: 50px; 
-    margin-top: 50px; 
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 header img {
-    max-width: 200px; /* Adjust the image width as needed */
-    margin-right: 40px; /* Add spacing between the image and text */
+    max-width: 200px;
+    margin-right: 40px;
 }
 
 header h1, header h2 {
-    font-family: Arial, sans-serif; /* Use Arial if available, otherwise use a sans-serif font */
+    font-family: Arial, sans-serif;
 }
 
-
 #content {
-    display: flex; /* Use flexbox to create a horizontal layout */
-    justify-content: space-between; /* Space elements evenly */
-    align-items: flex-start; /* Align items to the top */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     font-size: 19px;
 }
 
 #about-me {
-    flex: 1; /* Expand to fill available space */
-    margin-right: 20px; /* Add some spacing between sections */
+    flex: 1;
+    margin-right: 20px;
     margin-left: 50px;
 }
 
 #things-i-like {
-    flex: 1; /* Expand to fill available space */
+    flex: 1;
 }
 
 #things-i-like img {
-    max-width: 200px; /* Adjust the image width as needed */
-    margin-right: 40px; /* Add spacing between the image and text */
+    max-width: 200px;
+    margin-right: 40px;
 }
 
-/* Add this CSS to your stylesheet */
 .image-container {
     display: flex;
-    align-items: center; /* Center images vertically */
-    margin-top: 10px; /* Add some top margin for spacing */
+    align-items: center;
+    margin-top: 10px;
 }
 
 .image-container img {
-    max-width: 200px; /* Set a maximum width for the images */
-    margin: 1px; /* Add some margin around each image */
+    max-width: 200px;
+    margin: 1px;
 }
-
 
 #contact-me {
     text-align: center;
     padding: 1px;
     margin-top: auto;
-    margin-bottom: 0; /* Remove margin-bottom */
+    margin-bottom: 0;
 }
 
 .social-icons-container {
-    flex-grow: 1; /* Fill the remaining vertical space */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
 .social-icons a {
-    font-size: 40px; /* Adjust the icon size */
-    margin-right: 20px; /* Add spacing between icons */
+    font-size: 40px;
+    margin-right: 20px;
 }
 
-/* Change the color for specific social media icons */
 .social-icons a[href*="linkedin.com"] {
-    color: #0077B5; /* LinkedIn blue */
+    color: #0077B5;
 }
 
 .social-icons a[href*="facebook.com"] {
-    color: #1877F2; /* Facebook blue */
+    color: #1877F2;
 }
 
 .social-icons a[href*="twitter.com"] {
-    color: #1DA1F2; /* Twitter blue */
+    color: #1DA1F2;
 }
 
 .social-icons a[href*="instagram.com"] {
-    color: #E4405F; /* Instagram pink */
+    color: #E4405F;
 }
 
 .social-icons a[href*="github.com"] {
-    color: #333; /* GitHub black */
+    color: #333;
 }
 
 .social-icons a[href*="mailto"] {
-    color: #0070c9; /* Apple Mail blue color */ 
+    color: #0070c9;
 }
 
-
 footer {
-    /* background-color: #bdb76b; */
     text-align: center;
-    padding: 1px; 
+    padding: 1px;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the body covers the entire viewport height */
+    min-height: 100vh;
 }
 
-
-/* qualifications */
 #q-content {
-    justify-content: space-between; /* Space elements evenly */
-    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+    align-items: flex-start;
     font-size: 15px;
     margin-left: 50px;
 }
 
-/* portfolio */
-#projects{
+#projects {
     font-size: 20px;
     margin-left: 50px;
 }
 
 #header-projects {
-    /* Add some left margin to move the header away from the left border */
-    display: flex; /* Use flexbox to create a horizontal layout */
-    align-items: center; /* Align items vertically in the center */
-    margin-left: 50px; 
-    margin-top: 30px; 
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 
 #header-projects h1 {
-    font-family: Arial, sans-serif; /* Use Arial if available, otherwise use a sans-serif font */
+    font-family: Arial, sans-serif;
+}
+
+#service-content {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.service-card {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #F4ECF7;
+}
+
+.service-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#first-card {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #F4ECF7;
+    align-items: center;
+}
+
+#first-card .card-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#first-card .circle-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#first-card .circle-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #e6f7ff;
+}
+
+.project-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-details {
+    flex: 2;
 }
