@@ -1,5 +1,5 @@
 body {
-    background-color: #212F3C;
+    background-color:white;
     margin: 0;
     padding: 0;
 }
@@ -11,9 +11,9 @@ ul {
 }
 
 ul {
-    background-color: #B3B6B7;
+    background-color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
     align-items: center;
     gap: 0;
 }
@@ -30,18 +30,20 @@ li a {
     text-align: center;
     padding: 8px 50px;
     text-decoration: none;
-    transition: background-color 0.8s;
+    transition: background-color 0.5s;
     border-radius: 0px;
     font-size: 15px;
     font-family: Montserrat, sans-serif;
 }
 
 li a:hover {
-    background-color: #45B39D;
+    background-color: transparent; /* Remove background color on hover */
+    /* text-decoration: underline; */
+    border-bottom: 4px solid black;
 }
 
 .active {
-    background-color: #45B39D;
+    background-color: black;
 }
 
 li a::before {
@@ -55,41 +57,49 @@ li a::before {
 
 #name-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 2px;
     font-size: larger;
+    margin-left: 350px;
+    margin-bottom: 50px;
 }
 
 #name-container h1 {
-    font-size: 70px;
-    color: #45B39D;
+    font-size: 40px;
+    color: black;
     margin-top: 20px;
     font-family: Montserrat, sans-serif;
 }
 
 #name-container img {
-    max-width: 350px;
+    max-width: 250px;
     margin-top: 20px;
+    margin-left: 30px;
 }
 
 #content {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    font-size: 19px;
+    background-color: wheat; /* Card background color */
+    border-radius: 25px; /* Rounded corners for the card */
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    max-width: 1000px; /* Maximum width of the card */
+    margin: 0 auto; /* Center the card horizontally */
 }
 
 #about-me {
-    flex: 1;
+    background-color: wheat; /* Frame background color */
+    border-radius: 8px; /* Rounded corners for the frame */
+    padding: 20px; /* Padding inside the frame */
+
+    /* flex: 1;
     margin: 0 70px;
     align-items: center;
     text-align: center;
     color: #BDC3C7;
     font-size: 22px;
     margin-bottom: 50px;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat, sans-serif; */
 }
 
 #contact-me {
@@ -181,10 +191,10 @@ footer p {
 }
 
 /* PORTFOLIO */
-
 #projects {
     font-size: 20px;
     margin-left: 50px;
+    background-color:white;
 }
 
 #header-projects {
