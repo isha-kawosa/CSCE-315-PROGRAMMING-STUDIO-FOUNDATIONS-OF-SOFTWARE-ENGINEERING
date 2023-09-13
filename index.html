@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monograph">
+
 </head>
 <body>
     
@@ -24,14 +26,13 @@
     
             </ul>
         </nav>
-        
-        <div id="lastDiv" class="row border">
-            <p>Change my background color</p>
-          </div>
 
-          <div class="container">
-            <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
-          </div>
+        <div class="header-toggle-container">
+            <label class="theme-switch" for="theme-toggle">
+                <input type="checkbox" id="theme-toggle" onclick="toggleStyleSheet()">
+                <span class="slider round"></span>
+            </label>
+        </div>
 
         <script src="toggle.js"></script>
 
@@ -41,6 +42,8 @@
                 <img src="./isha.jpeg" alt="Image Description">
             </div>
         </header>
+
+        
     
         <section id="content">
             <div id="about-me">
