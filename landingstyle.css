@@ -366,7 +366,7 @@ footer p {
     background-color: #e6f7ff;
     text-align: left;
     display: flex;
-    align-items: center; /* Center content vertically */
+    align-items: center; 
 }
 
 .service-content {
